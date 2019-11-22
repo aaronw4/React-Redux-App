@@ -5,7 +5,7 @@ import {getDogData} from '../actions';
 const DogData = props => {
     return (
         <div>
-            <div>
+            <div className='button'>
                 <button onClick={() => {
                     props.getDogData();
                 }}>
@@ -13,7 +13,7 @@ const DogData = props => {
                 </button>
             </div>
             <div>
-                <img src={props.dogImg} className='dogImg/>
+                <img src={props.dogImg} className='dogImg'/>
             </div>
         </div>
     )
