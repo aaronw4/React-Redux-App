@@ -8,7 +8,7 @@ export const getDogData = () => dispatch => {
         .then(res => 
             dispatch({
                 type: GET_DOG_DATA,
-                payload: res
+                payload: res.data.url
             })
         )
         .catch(err => {
